@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-freshfrag-dev-b2688-authRole",
+      "UnauthRoleArn": "arn:aws:iam::463986118819:role/amplify-freshfrag-dev-b2688-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::463986118819:role/amplify-freshfrag-dev-b2688-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-freshfrag-dev-b2688-deployment",
+      "UnauthRoleName": "amplify-freshfrag-dev-b2688-unauthRole",
+      "StackName": "amplify-freshfrag-dev-b2688",
+      "StackId": "arn:aws:cloudformation:ap-south-1:463986118819:stack/amplify-freshfrag-dev-b2688/ded3dc00-9422-11ef-b8ff-0634ffb83ab7",
+      "AmplifyAppId": "d2it7ndz8ddrst"
+    }
+  }
+}
