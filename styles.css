@@ -23,9 +23,34 @@ body {
 .card-text {
     color: #6c757d;
 }
+
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+section:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1rem;
+    color: #666;
+}
+
 footer {
     background-color: #343a40;
-}
-footer p {
-    color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
 }
