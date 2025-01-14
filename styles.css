@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.top-bar {
+    background-color: #321771;
+}
+.navbar {
+    background-color: #ffffff;
+}
+.navbar-brand, .nav-link {
+    color: #4d085c !important;
+}
+.nav-link:hover {
+    color: #ac3d3d !important;
+}
+.card {
+    background-color: #ffffff;
+}
+.card-title {
+    color: #4d085c;
+}
+.card-text {
+    color: #6c757d;
+}
+footer {
+    background-color: #343a40;
+}
+footer p {
+    color: #ffffff;
+}
