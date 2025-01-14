@@ -11,36 +11,89 @@
     <!-- MDB CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .top-bar {
+            background-color: #343a40;
+        }
+        .navbar {
+            background-color: #ffffff;
+        }
+        .navbar-brand, .nav-link {
+            color: #4d085c !important;
+        }
+        .nav-link:hover {
+            color: #ac3d3d !important;
+        }
+        .card {
+            background-color: #ffffff;
+        }
+        .card-title {
+            color: #4d085c;
+        }
+        .card-text {
+            color: #6c757d;
+        }
+        footer {
+            background-color: #343a40;
+        }
+        footer p {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <h1>Fresh Fragrance Products</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">FFP</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#homepage">Homepage</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#infrastructure">Infrastructure</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Our Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#clients">Our Clients</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
+    <header>
+        <div class="top-bar text-white py-2">
+            <div class="container d-flex justify-content-between">
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope mr-2"></i> freshfragranceproducts@gmail.com</span>
+                    <span class="ml-4"><i class="fas fa-phone mr-2"></i> +91 92895 88862</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Logo" class="logo" style="height: 40px;"> Fresh Fragrance Products
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Infrastructure</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <a class="dropdown-item" href="#">Product 1</a>
+                                <a class="dropdown-item" href="#">Product 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Our Clients</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="contact-info mt-3">
-            <p>Email: <a href="mailto:freshfragranceproducts@gmail.com" class="text-white">freshfragranceproducts@gmail.com</a></p>
-            <p>Phone Number: <a href="tel:+919289588862" class="text-white">+91 92895 88862</a></p>
-        </div>
     </header>
 
     <section class="container my-5">
         <div class="row">
             <div class="col-md-6 mb-4">
-                <div class="card shadow-sm text-center p-4 h-100" style="background-color: #e3f2fd;">
-                    <div class="card-body">
+                <div class="card shadow-sm text-center p-4 h-100 mx-2" style="background-color: #e3f2fd;">
+                    <div class="card-body" style="border: 2px solid #4d085c;">
                         <i class="fas fa-brain fa-3x mb-3" style="color: #90caf9;"></i>
                         <h5 class="card-title font-weight-bold">INFRASTRUCTURE</h5>
                         <p class="card-text">
@@ -51,7 +104,7 @@
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm text-center p-4 h-100">
-                    <div class="card-body">
+                    <div class="card-body" style="border: 2px solid #000;">
                         <i class="fas fa-database fa-3x mb-3"></i>
                         <h5 class="card-title font-weight-bold">WORK AREA</h5>
                         <p class="card-text">
@@ -62,10 +115,10 @@
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm text-center p-4 h-100">
-                    <div class="card-body">
+                    <div class="card-body" style="border: 2px solid #ac3d3d;">
                         <i class="fas fa-brain fa-3x mb-3"></i>
                         <h5 class="card-title font-weight-bold">MACHINERY</h5>
-                        <p class="card-text">
+                        <p class="card-text"></p>
                             A nine-color flexo printer in-line registration control with UV ink curing facility. State-of-art polymer plate mounting machine secures a high level of registration control by imparting a register image while printing. Equipped with two pouching machines to produce pouches with breathable paper & starch-based breathable film.
                         </p>
                     </div>
@@ -73,7 +126,7 @@
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm text-center p-4 h-100" style="background-color: #e3f2fd;">
-                    <div class="card-body">
+                    <div class="card-body" style="border: 2px solid #391b76;">
                         <i class="fas fa-database fa-3x mb-3"  style="color: #90caf9;"></i>
                         <h5 class="card-title font-weight-bold">QUALITY</h5>
                         <p class="card-text">
@@ -85,12 +138,11 @@
         </div>
     </section>
       
-      <!-- Include Font Awesome for icons -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Include Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
       
-
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Fresh Fragrance Products, Air Freshener Pouches Manufacturing</p>
+    <footer class="text-white text-center py-3">
+        <p> &copy; 2023 Fresh Fragrance Products, Air Freshener Pouches Manufacturing <img src="Logo.png" alt="Fresh Fragrance Products Logo" style="height: 40px;"></p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
@@ -102,4 +154,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
-</html>
+</html></footer>
