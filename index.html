@@ -8,11 +8,9 @@
     <title>Fresh Fragrance Products - Air Freshener Pouch Manufacturer</title>
     <link rel="canonical" href="https://www.ffpn.in/">
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- MDB CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -46,16 +44,10 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
                         <li class="nav-item"><a class="nav-link" href="#infrastructure">Infrastructure</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Products
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="productsDropdown">
-                                <a class="dropdown-item" href="#">Gel based pouches</a>
-                                <a class="dropdown-item" href="#">Powder based pouches</a>
-                                <a class="dropdown-item" href="#">Liquid based pouches</a>
-                            </div>
-                        </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#allProducts">
+                                    Our Products
+                                </a>
                         <li class="nav-item"><a class="nav-link" href="#clientsCarousel">Our Clients</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contactUs">Contact Us</a></li>
                     </ul>
@@ -64,7 +56,7 @@
         </nav>
     </header>
 
-    <section id="homepage" class="container my-3">
+    <section id="homepage" class="container my-5">
         <div id="homepageCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -128,6 +120,45 @@
         <p>We at Fresh Fragrance Products Nagpur are fully capable of manufacturing & supplying pouches of different orientation, three side seal pouches, standing pouches, center seal pouches with spout & zipper. Fresh Fragrance Products have pioneered itself to produce pouches to fill air freshener contents (Powder or Gel Form) which is under Home Hygiene products given a trusted replacement for TYVEK Paper.</p>
         <p>We have developed structure indigenously to fulfill all requirements for aroma diffusion through our inner pouches & outer pouches developed in such a manner to hold aroma of inner pouches until it is opened.</p>
         <p>We are capable of serving the customer needs with firm commitments under the pledge to serve better on each & every supply we make.</p>
+    </section>
+    <section id="allProducts" class="container my-5">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#allProductsModal">See All Products</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="allProductsModal" tabindex="-1" aria-labelledby="allProductsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="allProductsModalLabel">Our Products</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-wrap justify-content-around">
+                            <img src="./products/abhyzine_product.png" class="d-block img-fluid mb-3" alt="Abhyzine Product" style="max-height: 100px;">
+                            <img src="./products/aerocare_product.png" class="d-block img-fluid mb-3" alt="Aerocare Product" style="max-height: 100px;">
+                            <img src="./products/chakachak_product.png" class="d-block img-fluid mb-3" alt="Chakachak Product" style="max-height: 100px;">
+                            <img src="./products/dabur_product.png" class="d-block img-fluid mb-3" alt="Dabur Product" style="max-height: 100px;">
+                            <img src="./products/dabur_product-2.png" class="d-block img-fluid mb-3" alt="Dabur Product 2" style="max-height: 100px;">
+                            <img src="./products/dmart_product.png" class="d-block img-fluid mb-3" alt="DMart Product" style="max-height: 100px;">
+                            <img src="./products/iki_product.png" class="d-block img-fluid mb-3" alt="Iki Product" style="max-height: 100px;">
+                            <img src="./products/Odonil-Gel-Based.png" class="d-block img-fluid mb-3" alt="Odonil Gel Based" style="max-height: 100px;">
+                            <img src="./products/Reliance_product.png" class="d-block img-fluid mb-3" alt="Reliance Retail" style="max-height: 100px;">
+                            <img src="./products/ranee_perfumer-1.png" class="d-block img-fluid mb-3" alt="Ranee Perfumer" style="max-height: 100px;">
+                            <img src="./products/Primmox_product.png" class="d-block img-fluid mb-3" alt="Primmox Company" style="max-height: 100px;">
+                            <img src="./products/PourHome_product.png" class="d-block img-fluid mb-3" alt="Pour Home" style="max-height: 100px;">
+                            <img src="./products/DevDarshan.png" class="d-block img-fluid mb-3" alt="DevDarshan" style="max-height: 100px;">
+                            <img src="./products/home_select.png" class="d-block img-fluid mb-3" alt="home_select" style="max-height: 100px;">
+                            <img src="./products/misc.png" class="d-block img-fluid mb-3" alt="miscellenous" style="max-height: 100px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="clients_page" class="container my-5">
